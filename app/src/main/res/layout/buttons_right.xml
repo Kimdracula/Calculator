@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/buttonDevide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_buttons_right"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/margin_between_buttons_vert"
+        android:text="÷" />
+
+    <Button
+        android:id="@+id/buttonMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_buttons_right"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/margin_between_buttons_vert"
+        android:text="x" />
+
+    <Button
+        android:id="@+id/buttonMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_buttons_right"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/margin_between_buttons_vert"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/buttonPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_buttons_right"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/margin_between_buttons_vert"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/buttonEqual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_buttons_right"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/white"
+        android:text="="
+        android:layout_marginBottom="@dimen/margin_between_buttons_vert"/>
+</LinearLayout>

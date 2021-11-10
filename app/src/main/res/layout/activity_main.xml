@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="bottom|center_horizontal"
+    tools:context=".MainActivity"
+    android:paddingBottom="20dp">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_between_buttons_vert">
+
+            <Button
+                android:id="@+id/buttonAC"
+                android:layout_marginEnd="@dimen/side_margin"
+                android:background="@drawable/round_buttons_top"
+                android:text="@string/ac"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="@dimen/text_size"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/buttonNegative"
+                android:layout_marginEnd="@dimen/side_margin"
+                android:background="@drawable/round_buttons_top"
+                android:text="@string/negative"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="@dimen/text_size"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/buttonPercent"
+                android:layout_marginEnd="@dimen/side_margin"
+                android:background="@drawable/round_buttons_top"
+                android:text="@string/percent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="@dimen/text_size"
+                tools:ignore="ButtonStyle" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_between_buttons_vert">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_marginEnd="@dimen/side_margin"
+                android:background="@drawable/round_buttons_numbers"
+                android:text="@string/_7"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_marginEnd="@dimen/side_margin"
+                android:background="@drawable/round_buttons_numbers"
+                android:text="@string/_8"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_marginEnd="@dimen/side_margin"
+                android:background="@drawable/round_buttons_numbers"
+                android:text="@string/_9"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                tools:ignore="ButtonStyle" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_between_buttons_vert">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_marginEnd="@dimen/side_margin"
+                android:background="@drawable/round_buttons_numbers"
+                android:text="@string/_4"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_marginEnd="@dimen/side_margin"
+                android:background="@drawable/round_buttons_numbers"
+                android:text="@string/_5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_marginEnd="@dimen/side_margin"
+                android:background="@drawable/round_buttons_numbers"
+                android:text="@string/_6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                tools:ignore="ButtonStyle" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_between_buttons_vert">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_marginEnd="@dimen/side_margin"
+                android:background="@drawable/round_buttons_numbers"
+                android:text="@string/_1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_marginEnd="@dimen/side_margin"
+                android:background="@drawable/round_buttons_numbers"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_marginEnd="@dimen/side_margin"
+                android:background="@drawable/round_buttons_numbers"
+                android:text="@string/_3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                tools:ignore="ButtonStyle" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_between_buttons_vert">
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_span="2"
+                android:background="@drawable/button_zero"
+                android:paddingEnd="90dp"
+                android:text="@string/_0"
+                android:layout_marginEnd="@dimen/side_margin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/buttonComma"
+                android:layout_marginEnd="@dimen/side_margin"
+                android:background="@drawable/round_buttons_numbers"
+                android:text="@string/comma"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <include
+        layout="@layout/buttons_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </include>
+</LinearLayout>
