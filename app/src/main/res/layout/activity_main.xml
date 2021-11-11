@@ -130,7 +130,7 @@
                 android:id="@+id/button2"
                 android:layout_marginEnd="@dimen/side_margin"
                 android:background="@drawable/round_buttons_numbers"
-                android:text="2"
+                android:text="@string/_2"
                 android:textColor="@color/white"
                 android:textSize="@dimen/text_size"
                 tools:ignore="ButtonStyle" />

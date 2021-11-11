@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="text_size">40sp</dimen>
-    <dimen name="margin_between_buttons_vert">10dp</dimen>
+    <dimen name="margin_between_buttons_vert">5dp</dimen>
     <dimen name="side_margin">5dp</dimen>
 </resources>

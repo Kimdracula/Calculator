@@ -12,17 +12,17 @@
         android:textSize="@dimen/text_size"
         android:textColor="@color/white"
         android:layout_marginBottom="@dimen/margin_between_buttons_vert"
-        android:text="÷" />
+        android:text="@string/divide" />
 
     <Button
         android:id="@+id/buttonMultiply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_buttons_right"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textColor="@color/white"
         android:layout_marginBottom="@dimen/margin_between_buttons_vert"
-        android:text="x" />
+        android:text="@string/multiply" />
 
     <Button
         android:id="@+id/buttonMinus"
@@ -32,7 +32,7 @@
         android:textSize="@dimen/text_size"
         android:textColor="@color/white"
         android:layout_marginBottom="@dimen/margin_between_buttons_vert"
-        android:text="-" />
+        android:text="@string/minus" />
 
     <Button
         android:id="@+id/buttonPlus"
@@ -42,7 +42,7 @@
         android:textSize="@dimen/text_size"
         android:textColor="@color/white"
         android:layout_marginBottom="@dimen/margin_between_buttons_vert"
-        android:text="+" />
+        android:text="@string/plus" />
 
     <Button
         android:id="@+id/buttonEqual"
@@ -51,6 +51,6 @@
         android:background="@drawable/round_buttons_right"
         android:textSize="@dimen/text_size"
         android:textColor="@color/white"
-        android:text="="
+        android:text="@string/equal"
         android:layout_marginBottom="@dimen/margin_between_buttons_vert"/>
 </LinearLayout>
