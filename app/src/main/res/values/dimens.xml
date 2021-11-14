@@ -3,4 +3,5 @@
     <dimen name="text_size">40sp</dimen>
     <dimen name="margin_between_buttons_vert">5dp</dimen>
     <dimen name="side_margin">5dp</dimen>
+    <dimen name="display_number_size">75sp</dimen>
 </resources>
