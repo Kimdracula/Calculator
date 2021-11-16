@@ -2,131 +2,151 @@ package com.homework.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-private TextView textView;
+
+    Boolean newOperation = true;
+    TextView textView;
+    String number;;
+    char operation;
+    String newNumber;
+    String oldNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+         textView = findViewById(R.id.textView);
+}
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
 
-        textView = findViewById(R.id.textView);
+        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT)
+        {
+            setContentView(R.layout.activity_main);
+        }
+        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE)
+        {
+            setContentView(R.layout.activity_main_land);
+        }
+    }
 
-        Button button0 = findViewById(R.id.button0);
-        Button button1 = findViewById(R.id.button1);
-        Button button2 = findViewById(R.id.button2);
-        Button button3 = findViewById(R.id.button3);
-        Button button4 = findViewById(R.id.button4);
-        Button button5 = findViewById(R.id.button5);
-        Button button6 = findViewById(R.id.button6);
-        Button button7 = findViewById(R.id.button7);
-        Button button8 = findViewById(R.id.button8);
-        Button button9 = findViewById(R.id.button9);
 
-        Button buttonComma = findViewById(R.id.buttonComma);
-        Button buttonAC = findViewById(R.id.buttonAC);
-        Button buttonNegative = findViewById(R.id.buttonNegative);
-        Button buttonPercent = findViewById(R.id.buttonPercent);
-        Button buttonDivide = findViewById(R.id.buttonDevide);
-        Button buttonMultiply = findViewById(R.id.buttonMultiply);
-        Button buttonMinus = findViewById(R.id.buttonMinus);
-        Button buttonPlus = findViewById(R.id.buttonPlus);
-        Button buttonEqual = findViewById(R.id.buttonEqual);
+public void numberEvent (View view) {
+    if (newOperation)
+        textView.setText("");
+    newOperation = false;
 
-        View.OnClickListener clickListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                switch (view.getId()){
-                    case R.id.button0:
-                        if (Integer.parseInt(textView.getText().toString())==0)
-                            break;
-                        else
-                        textView.append("0");
+    number = textView.getText().toString();
+    switch (view.getId()) {
+
+        case R.id.button0:
+            number += "0";
+            break;
+        case R.id.button1:
+            number += "1";
+            break;
+        case R.id.button2:
+            number += "2";
+            break;
+        case R.id.button3:
+            number += "3";
+            break;
+        case R.id.button4:
+            number += "4";
+            break;
+        case R.id.button5:
+            number += "5";
+            break;
+        case R.id.button6:
+            number += "6";
+            break;
+        case R.id.button7:
+            number += "7";
+            break;
+        case R.id.button8:
+            number += "8";
+            break;
+        case R.id.button9:
+            number += "9";
+            break;
+        case R.id.buttonNegative:
+            if (textView.getText().toString().contains("-"))
+                return;
+            else
+            number ="-"+ number;
+            break;
+        case R.id.buttonComma:
+            if (newOperation)
+                return;
+            if (textView.getText().toString().contains("."))
+                return;
+            else
+            number = number+".";
+            break;
+
+    }
+    textView.setText(number);
+
+}
+
+    public void actionEvent (View view) {
+        newOperation = true;
+        oldNumber = textView.getText().toString();
+        switch (view.getId()) {
+
+            case R.id.buttonDivide:
+                operation = '/';
                 break;
-                    case R.id.button1:
-                        if (Integer.parseInt(textView.getText().toString())==0){
-                           textView.setText("1");
-                        break;}
-                        else
-                        textView.append("1");
-                        break;
-                    case R.id.button2:
-                        if (Integer.parseInt(textView.getText().toString())==0){
-                            textView.setText("2");
-                            break;}
-                        else
-                        textView.append("2");
-                        break;
-                    case R.id.button3:
-                        if (Integer.parseInt(textView.getText().toString())==0){
-                            textView.setText("3");
-                            break;}
-                        else
-                        textView.append("3");
-                        break;
-                    case R.id.button4:
-                        if (Integer.parseInt(textView.getText().toString())==0){
-                            textView.setText("4");
-                            break;}
-                        else
-                        textView.append("4");
-                        break;
-                    case R.id.button5:
-                        if (Integer.parseInt(textView.getText().toString())==0){
-                            textView.setText("5");
-                            break;}
-                        else
-                        textView.append("5");
-                        break;
-                    case R.id.button6:
-                        if (Integer.parseInt(textView.getText().toString())==0){
-                            textView.setText("6");
-                            break;}
-                        else
-                        textView.append("6");
-                        break;
-                    case R.id.button7:
-                        if (Integer.parseInt(textView.getText().toString())==0){
-                            textView.setText("7");
-                            break;}
-                        else
-                        textView.append("7");
-                        break;
-                    case R.id.button8:
-                        if (Integer.parseInt(textView.getText().toString())==0){
-                            textView.setText("8");
-                            break;}
-                        else
-                        textView.append("8");
-                        break;
-                    case R.id.button9:
-                        if (Integer.parseInt(textView.getText().toString())==0){
-                            textView.setText("9");
-                            break;}
-                        else
-                        textView.append("9");
-                        break;
-                }
-            }
-        };
+            case R.id.buttonMultiply:
+                operation = '*';
+                break;
+            case R.id.buttonMinus:
+                operation = '-';
+                break;
+            case R.id.buttonPlus:
+                operation = '+';
+                break;
 
-button0.setOnClickListener(clickListener);
-        button1.setOnClickListener(clickListener);
-        button2.setOnClickListener(clickListener);
-        button3.setOnClickListener(clickListener);
-        button4.setOnClickListener(clickListener);
-        button5.setOnClickListener(clickListener);
-        button6.setOnClickListener(clickListener);
-        button7.setOnClickListener(clickListener);
-        button8.setOnClickListener(clickListener);
-        button9.setOnClickListener(clickListener);
+        }
+    }
 
+    public void equalEvent (View view){
+    newNumber = textView.getText().toString();
+        float result=0;
+        switch (operation){
+            case '/':
+                result= Float.parseFloat(oldNumber)/Float.parseFloat(newNumber);
+                break;
+            case '*':
+                result= Float.parseFloat(oldNumber)*Float.parseFloat(newNumber);
+                break;
+            case '-':
+                result= Float.parseFloat(oldNumber)-Float.parseFloat(newNumber);
+                break;
+            case '+':
+                result= Float.parseFloat(oldNumber)+Float.parseFloat(newNumber);
+                break;
+        }
+
+textView.setText("" + result);
+    }
+
+    public void acButtonEvent (View view){
+      textView.setText("0");
+      newOperation=true;
+    }
+
+    public void percentButtonEvent (View view){
+double percentNumber = Double.parseDouble(textView.getText().toString())/100;
+textView.setText(""+percentNumber);
+newOperation = true;
     }
 
 

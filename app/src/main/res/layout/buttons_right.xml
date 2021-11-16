@@ -5,7 +5,8 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/buttonDevide"
+        android:id="@+id/buttonDivide"
+        android:onClick="actionEvent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_buttons_right"
@@ -16,6 +17,7 @@
 
     <Button
         android:id="@+id/buttonMultiply"
+        android:onClick="actionEvent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_buttons_right"
@@ -26,6 +28,7 @@
 
     <Button
         android:id="@+id/buttonMinus"
+        android:onClick="actionEvent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_buttons_right"
@@ -36,6 +39,7 @@
 
     <Button
         android:id="@+id/buttonPlus"
+        android:onClick="actionEvent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_buttons_right"
@@ -46,6 +50,7 @@
 
     <Button
         android:id="@+id/buttonEqual"
+        android:onClick="equalEvent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_buttons_right"
