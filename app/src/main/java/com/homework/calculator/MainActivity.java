@@ -2,43 +2,50 @@ package com.homework.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Switch;
 import android.widget.TextView;
 
+import com.google.android.material.switchmaterial.SwitchMaterial;
+
 public class MainActivity extends AppCompatActivity {
+    private static final String appTheme = "APP_THEME";
+    private static final String NameSharedPreference = "setup";
+    private static final int AppThemeLightStyle = 1;
+    private static final int AppThemeDarkStyle = 2;
 
 
     Boolean newOperation = true;
     TextView textView;
-    String number;;
+    String number;
     char operation;
     String newNumber;
     String oldNumber;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(getAppTheme(R.style.AppTheme));
         setContentView(R.layout.activity_main);
          textView = findViewById(R.id.textView);
-}
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
 
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT)
-        {
-            setContentView(R.layout.activity_main);
-        }
-        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE)
-        {
-            setContentView(R.layout.activity_main_land);
-        }
+        initThemeChooser();
+
+    }
+
+    private void initThemeChooser() {
+        SwitchMaterial switchTheme = findViewById(R.id.switchTheme);
+
     }
 
 
-public void numberEvent (View view) {
+
+    public void numberEvent (View view) {
     if (newOperation)
         textView.setText("");
     newOperation = false;
@@ -147,6 +154,45 @@ textView.setText("" + result);
 double percentNumber = Double.parseDouble(textView.getText().toString())/100;
 textView.setText(""+percentNumber);
 newOperation = true;
+    }
+
+
+    public void onSwitch(View view,final int codeStyle) {
+        setAppTheme(codeStyle);
+        // пересоздадим активити, чтобы тема применилась
+        recreate();
+
+
+    }
+
+    private int getAppTheme(int codeStyle) {
+        return codeStyleToStyleId(getCodeStyle(codeStyle));
+    }
+
+    private int getCodeStyle(int codeStyle){
+        // Работаем через специальный класс сохранения и чтения настроек
+        SharedPreferences sharedPref = getSharedPreferences(NameSharedPreference, MODE_PRIVATE);
+        //Прочитать тему, если настройка не найдена - взять по умолчанию
+        return sharedPref.getInt(appTheme, codeStyle);
+    }
+
+    private void setAppTheme(int codeStyle) {
+        SharedPreferences sharedPreferences =getSharedPreferences(NameSharedPreference, MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt(appTheme, codeStyle);
+        editor.apply();
+    }
+
+    private int codeStyleToStyleId(int codeStyle) {
+        switch (codeStyle) {
+
+            case AppThemeLightStyle:
+                return R.style.AppThemeLight;
+            case AppThemeDarkStyle:
+                return R.style.AppThemeDark;
+            default:
+                return R.style.AppTheme;
+        }
     }
 
 

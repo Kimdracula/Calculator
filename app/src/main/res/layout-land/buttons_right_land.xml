@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:ignore="MissingDefaultResource">
+
+
+    <Button
+        android:id="@+id/buttonAC"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+
+        android:onClick="acButtonEvent"
+        android:layout_marginEnd="@dimen/side_margin"
+        android:background="@drawable/buttons_grey_horizontal"
+        android:text="@string/ac"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="@dimen/text_size"
+         />
+    <Button
+        android:id="@+id/buttonDivide"
+        android:onClick="actionEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_buttons_right"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/white"
+        android:layout_marginEnd="@dimen/side_margin"
+        android:text="@string/divide" />
+
+    <Button
+        android:id="@+id/buttonMultiply"
+        android:onClick="actionEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_buttons_right"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="@dimen/side_margin"
+        android:text="@string/multiply" />
+
+    <Button
+        android:id="@+id/buttonMinus"
+        android:onClick="actionEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_buttons_right"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/white"
+        android:layout_marginEnd="@dimen/side_margin"
+        android:text="@string/minus" />
+
+    <Button
+        android:id="@+id/buttonPlus"
+        android:onClick="actionEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_buttons_right"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/white"
+        android:layout_marginEnd="@dimen/side_margin"
+        android:text="@string/plus" />
+
+    <Button
+        android:id="@+id/buttonEqual"
+        android:onClick="equalEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_buttons_right"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/white"
+        android:text="@string/equal"
+        android:layout_marginEnd="@dimen/side_margin"/>
+</LinearLayout>

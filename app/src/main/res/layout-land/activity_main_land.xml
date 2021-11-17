@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/_0"
+        android:gravity="end"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@color/white"
+        android:textSize="@dimen/display_number_size" />
+
+
+
+    <include
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        layout="@layout/buttons_right_land"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:gravity="bottom|center_horizontal">
+
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_between_buttons_vert">
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_between_buttons_vert">
+
+
+                <Button
+                    android:id="@+id/buttonNegative"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin"
+                    android:background="@drawable/buttons_grey_horizontal"
+                    android:text="@string/negative"
+                    android:layout_span="2"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="@dimen/text_size"
+                    tools:ignore="ButtonStyle" />
+
+
+
+                <Button
+                    android:id="@+id/button5"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_5"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_6"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_7"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_8"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_9"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    tools:ignore="ButtonStyle" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_between_buttons_vert">
+
+                <Button
+                    android:id="@+id/buttonPercent"
+                    android:onClick="percentButtonEvent"
+                    android:layout_marginEnd="@dimen/side_margin"
+                    android:background="@drawable/round_buttons_top"
+                    android:text="@string/percent"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="@dimen/text_size"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/button0"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_4"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/buttonComma"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/comma"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size" />
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

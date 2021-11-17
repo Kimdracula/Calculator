@@ -20,4 +20,9 @@
     <string name="plus">+</string>
     <string name="equal">=</string>
     <string name="_default">0</string>
+
+    <string name="app_theme">Material main</string>
+    <string name="material_light">Material light</string>
+    <string name="material_light_action_bar_dark">Material light action bar dark</string>
+    <string name="material_dark">Material dark</string>
 </resources>

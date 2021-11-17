@@ -3,17 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onSwitch"
+        android:minHeight="32dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
         android:layout_marginRight="30dp"
         android:text="@string/_0"
         android:gravity="end"
@@ -41,15 +47,12 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/margin_between_buttons_vert">
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonAC"
-                android:onClick="acButtonEvent"
                 android:layout_marginEnd="@dimen/side_margin"
-                android:background="@drawable/round_buttons_top"
+                android:onClick="acButtonEvent"
                 android:text="@string/ac"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textSize="@dimen/text_size"
-                tools:ignore="ButtonStyle" />
+                android:textSize="@dimen/text_size" />
 
             <Button
                 android:id="@+id/buttonNegative"
