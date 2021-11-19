@@ -1,14 +1,8 @@
 package com.homework.calculator;
 
-import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
-import android.content.SharedPreferences;
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CompoundButton;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import com.google.android.material.switchmaterial.SwitchMaterial;
@@ -40,16 +34,14 @@ switcher(switchTheme);
     }
 
     private void switcher(SwitchMaterial switchTheme) {
-        switchTheme.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (switchTheme.isChecked()){
-                    setAppTheme(R.style.AppThemeDark);
-                    recreate();}
-                    else {
-                    setAppTheme(R.style.AppThemeLight);
-                    recreate();}
+        switchTheme.setOnClickListener(view -> {
+            if (switchTheme.isChecked()){
+                setAppTheme(R.style.AppThemeDark);
             }
+                else {
+                setAppTheme(R.style.AppThemeLight);
+            }
+            recreate();
         });
     }
 
