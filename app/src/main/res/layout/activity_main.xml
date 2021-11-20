@@ -51,7 +51,9 @@
             android:layout_marginBottom="@dimen/margin_between_buttons_vert">
 
             <com.google.android.material.button.MaterialButton
+
                 android:id="@+id/buttonAC"
+                style="@style/CustomButtonMaterial1"
                 android:layout_marginEnd="@dimen/side_margin"
                 android:background="@drawable/round_buttons_top"
                 android:text="@string/ac"
@@ -61,6 +63,7 @@
                 android:textSize="@dimen/button_text_size" />
 
             <com.google.android.material.button.MaterialButton
+                style="@style/CustomButtonMaterial1"
                 android:id="@+id/buttonNegative"
                 android:layout_marginEnd="@dimen/side_margin"
                 android:background="@drawable/round_buttons_top"
@@ -72,6 +75,7 @@
                 android:textSize="@dimen/button_text_size"/>
 
             <com.google.android.material.button.MaterialButton
+                style="@style/CustomButtonMaterial1"
                 android:id="@+id/buttonPercent"
                 android:layout_marginEnd="@dimen/side_margin"
                 android:textColor="@color/white"

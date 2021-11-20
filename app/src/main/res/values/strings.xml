@@ -22,4 +22,5 @@
     <string name="_default">0</string>
     <string name="material_light">Material light</string>
     <string name="material_dark">Material dark</string>
+
 </resources>
