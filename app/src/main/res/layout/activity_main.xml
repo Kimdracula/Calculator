@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
     android:orientation="vertical">
 
@@ -15,13 +14,13 @@
         android:layout_marginStart="@dimen/switch_button_margin"
         android:layout_marginTop="@dimen/switch_button_margin"
         android:checked="false"
-        android:minHeight="48dp" />
+        android:minHeight="@dimen/min_height_switch_button" />
 
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/textview_hight"
         android:layout_marginLeft="@dimen/textview_side_margin"
         android:layout_marginTop="@dimen/textview_margin_top"
         android:layout_marginRight="@dimen/textview_side_margin"
@@ -59,9 +58,10 @@
                 android:layout_marginEnd="@dimen/side_margin"
                 android:background="@drawable/round_buttons_top"
                 android:text="@string/ac"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:onClick="acButtonEvent"
-                android:textColor="@color/white"
-                android:textSize="30sp" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/upper_button_text_size" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonNegative"
@@ -73,9 +73,9 @@
                 android:text="@string/negative"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:onClick="numberEvent"
-                android:textSize="30sp"/>
+                android:textSize="@dimen/upper_button_text_size"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonPercent"
@@ -83,12 +83,12 @@
                 android:layout_height="@dimen/button_size_vertical"
                 style="@style/CustomButtonMaterial1"
                 android:layout_marginEnd="@dimen/side_margin"
-                android:textColor="@color/white"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:background="@drawable/round_buttons_top"
                 android:text="@string/percent"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:onClick="percentButtonEvent"
-                android:textSize="30sp" />
+                android:textSize="@dimen/upper_button_text_size"/>
 
         </TableRow>
 

@@ -5,7 +5,7 @@
     <dimen name="side_margin">5dp</dimen>
     <dimen name="display_number_size">75sp</dimen>
     <dimen name="textview_side_margin">30dp</dimen>
-    <dimen name="textview_margin_top">40dp</dimen>
+    <dimen name="textview_margin_top">70dp</dimen>
     <dimen name="button_margin_bottom">30dp</dimen>
     <dimen name="button_text_size">40sp</dimen>
     <dimen name="button_0_padding">90dp</dimen>
@@ -14,6 +14,12 @@
     <dimen name="button_size_horizontal">70dp</dimen>
     <dimen name="text_size_horizontal">30sp</dimen>
     <dimen name="button_size_vertical">80dp</dimen>
-    <dimen name="side_margin_verticalView">10dp</dimen>
     <dimen name="side_margin_horizontalView">10dp</dimen>
+    <dimen name="min_height_switch_button">48dp</dimen>
+    <dimen name="textview_hight">90dp</dimen>
+    <dimen name="upper_button_text_size">30sp</dimen>
+    <dimen name="include_start_margin">110dp</dimen>
+    <dimen name="include_margin_top">10dp</dimen>
+    <dimen name="ac_button_width">148dp</dimen>
+    <dimen name="ac_button_size">30sp</dimen>
 </resources>

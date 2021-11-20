@@ -4,7 +4,6 @@ package com.homework.calculator;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
 import com.google.android.material.switchmaterial.SwitchMaterial;
 
 public class MainActivity extends ThemeActivity {
