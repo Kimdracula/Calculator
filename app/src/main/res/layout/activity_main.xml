@@ -53,18 +53,21 @@
             <com.google.android.material.button.MaterialButton
 
                 android:id="@+id/buttonAC"
+                android:layout_width="@dimen/button_size_vertical"
+                android:layout_height="@dimen/button_size_vertical"
                 style="@style/CustomButtonMaterial1"
                 android:layout_marginEnd="@dimen/side_margin"
                 android:background="@drawable/round_buttons_top"
                 android:text="@string/ac"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:onClick="acButtonEvent"
                 android:textColor="@color/white"
-                android:textSize="@dimen/button_text_size" />
+                android:textSize="30sp" />
 
             <com.google.android.material.button.MaterialButton
-                style="@style/CustomButtonMaterial1"
                 android:id="@+id/buttonNegative"
+                android:layout_width="@dimen/button_size_vertical"
+                android:layout_height="@dimen/button_size_vertical"
+                style="@style/CustomButtonMaterial1"
                 android:layout_marginEnd="@dimen/side_margin"
                 android:background="@drawable/round_buttons_top"
                 android:text="@string/negative"
@@ -72,17 +75,20 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="@color/white"
                 android:onClick="numberEvent"
-                android:textSize="@dimen/button_text_size"/>
+                android:textSize="30sp"/>
 
             <com.google.android.material.button.MaterialButton
-                style="@style/CustomButtonMaterial1"
                 android:id="@+id/buttonPercent"
+                android:layout_width="@dimen/button_size_vertical"
+                android:layout_height="@dimen/button_size_vertical"
+                style="@style/CustomButtonMaterial1"
                 android:layout_marginEnd="@dimen/side_margin"
                 android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:background="@drawable/round_buttons_top"
                 android:text="@string/percent"
                 android:onClick="percentButtonEvent"
-                android:textSize="@dimen/button_text_size" />
+                android:textSize="30sp" />
 
         </TableRow>
 
@@ -93,6 +99,9 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button7"
+                android:layout_width="@dimen/button_size_vertical"
+                android:layout_height="@dimen/button_size_vertical"
+                style="@style/CustomButtonMaterial2"
                 android:layout_marginEnd="@dimen/side_margin"
                 android:background="@drawable/round_buttons_numbers"
                 android:text="@string/_7"
@@ -103,6 +112,9 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button8"
+                android:layout_width="@dimen/button_size_vertical"
+                android:layout_height="@dimen/button_size_vertical"
+                style="@style/CustomButtonMaterial2"
                 android:layout_marginEnd="@dimen/side_margin"
                 android:background="@drawable/round_buttons_numbers"
                 android:text="@string/_8"
@@ -113,6 +125,9 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button9"
+                android:layout_width="@dimen/button_size_vertical"
+                android:layout_height="@dimen/button_size_vertical"
+                style="@style/CustomButtonMaterial2"
                 android:layout_marginEnd="@dimen/side_margin"
                 android:background="@drawable/round_buttons_numbers"
                 android:text="@string/_9"
@@ -129,6 +144,9 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button4"
+                android:layout_width="@dimen/button_size_vertical"
+                android:layout_height="@dimen/button_size_vertical"
+                style="@style/CustomButtonMaterial2"
                 android:layout_marginEnd="@dimen/side_margin"
                 android:background="@drawable/round_buttons_numbers"
                 android:text="@string/_4"
@@ -140,6 +158,9 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button5"
                 android:layout_marginEnd="@dimen/side_margin"
+                android:layout_width="@dimen/button_size_vertical"
+                android:layout_height="@dimen/button_size_vertical"
+                style="@style/CustomButtonMaterial2"
                 android:background="@drawable/round_buttons_numbers"
                 android:text="@string/_5"
                 android:textColor="@color/white"
@@ -149,6 +170,9 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button6"
+                android:layout_width="@dimen/button_size_vertical"
+                android:layout_height="@dimen/button_size_vertical"
+                style="@style/CustomButtonMaterial2"
                 android:layout_marginEnd="@dimen/side_margin"
                 android:background="@drawable/round_buttons_numbers"
                 android:text="@string/_6"
@@ -165,6 +189,9 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button1"
+                android:layout_width="@dimen/button_size_vertical"
+                android:layout_height="@dimen/button_size_vertical"
+                style="@style/CustomButtonMaterial2"
                 android:layout_marginEnd="@dimen/side_margin"
                 android:background="@drawable/round_buttons_numbers"
                 android:text="@string/_1"
@@ -175,6 +202,9 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button2"
+                android:layout_width="@dimen/button_size_vertical"
+                android:layout_height="@dimen/button_size_vertical"
+                style="@style/CustomButtonMaterial2"
                 android:layout_marginEnd="@dimen/side_margin"
                 android:background="@drawable/round_buttons_numbers"
                 android:text="@string/_2"
@@ -185,6 +215,9 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button3"
+                android:layout_width="@dimen/button_size_vertical"
+                android:layout_height="@dimen/button_size_vertical"
+                style="@style/CustomButtonMaterial2"
                 android:layout_marginEnd="@dimen/side_margin"
                 android:background="@drawable/round_buttons_numbers"
                 android:text="@string/_3"
@@ -202,6 +235,9 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button0"
                 android:layout_span="2"
+                android:layout_width="@dimen/button_size_vertical"
+                android:layout_height="@dimen/button_size_vertical"
+                style="@style/CustomButtonMaterial2"
                 android:background="@drawable/button_zero"
                 android:paddingEnd="@dimen/button_0_padding"
                 android:text="@string/_0"
@@ -212,6 +248,9 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonComma"
+                android:layout_width="@dimen/button_size_vertical"
+                android:layout_height="@dimen/button_size_vertical"
+                style="@style/CustomButtonMaterial2"
                 android:layout_marginEnd="@dimen/side_margin"
                 android:background="@drawable/round_buttons_numbers"
                 android:text="@string/comma"

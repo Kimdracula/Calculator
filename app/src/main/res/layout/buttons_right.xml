@@ -8,8 +8,9 @@
     <com.google.android.material.button.MaterialButton
 
         android:id="@+id/buttonDivide"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/button_size_vertical"
+        android:layout_height="@dimen/button_size_vertical"
+        style="@style/CustomButtonMaterial3"
         android:background="@drawable/round_buttons_right"
         android:textSize="@dimen/button_text_size"
         android:onClick="actionEvent"
@@ -20,8 +21,9 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonMultiply"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/button_size_vertical"
+        android:layout_height="@dimen/button_size_vertical"
+        style="@style/CustomButtonMaterial3"
         android:background="@drawable/round_buttons_right"
         android:textSize="@dimen/x_button_size"
         android:textColor="@color/white"
@@ -32,8 +34,9 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonMinus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/button_size_vertical"
+        android:layout_height="@dimen/button_size_vertical"
+        style="@style/CustomButtonMaterial3"
         android:background="@drawable/round_buttons_right"
         android:textSize="@dimen/button_text_size"
         android:textColor="@color/white"
@@ -44,8 +47,9 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonPlus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/button_size_vertical"
+        android:layout_height="@dimen/button_size_vertical"
+        style="@style/CustomButtonMaterial3"
         android:background="@drawable/round_buttons_right"
         android:textSize="@dimen/button_text_size"
         android:textColor="@color/white"
@@ -56,8 +60,9 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonEqual"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/button_size_vertical"
+        android:layout_height="@dimen/button_size_vertical"
+        style="@style/CustomButtonMaterial3"
         android:background="@drawable/round_buttons_right"
         android:textSize="@dimen/button_text_size"
         android:textColor="@color/white"

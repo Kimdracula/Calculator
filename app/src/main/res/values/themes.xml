@@ -32,7 +32,20 @@
     </style>
     <style name="LightGreyButtonThemeOverlay">
         <item name="colorPrimary">#A6A6A6</item>
+    </style>
 
+    <style name="CustomButtonMaterial2" parent="Widget.MaterialComponents.Button">
+        <item name="materialThemeOverlay">@style/GreyButtonThemeOverlay</item>
+    </style>
+    <style name="GreyButtonThemeOverlay">
+        <item name="colorPrimary">#333333</item>
+    </style>
+
+    <style name="CustomButtonMaterial3" parent="Widget.MaterialComponents.Button">
+        <item name="materialThemeOverlay">@style/OrangeButtonThemeOverlay</item>
+    </style>
+    <style name="OrangeButtonThemeOverlay">
+        <item name="colorPrimary">#FE9327</item>
     </style>
 
 </resources>
