@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:ignore="MissingDefaultResource">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAC"
+        style="@style/CustomButtonMaterial1"
+        android:layout_height="@dimen/button_size_horizontal"
+        android:layout_width="@dimen/ac_button_width"
+        android:onClick="acButtonEvent"
+        android:layout_marginEnd="@dimen/side_margin_horizontalView"
+        android:background="@drawable/button_negative_horizontal"
+        android:text="@string/ac"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="@color/black"
+        android:textSize="@dimen/ac_button_size"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonDivide"
+        style="@style/CustomButtonMaterial3"
+        android:onClick="actionEvent"
+        android:layout_height="@dimen/button_size_horizontal"
+        android:layout_width="@dimen/button_size_horizontal"
+        android:background="@drawable/round_buttons_right"
+        android:textSize="@dimen/text_size_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginEnd="@dimen/side_margin_horizontalView"
+        android:text="@string/divide" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonMultiply"
+        style="@style/CustomButtonMaterial3"
+        android:onClick="actionEvent"
+        android:layout_height="@dimen/button_size_horizontal"
+        android:layout_width="@dimen/button_size_horizontal"
+        android:background="@drawable/round_buttons_right"
+        android:textSize="@dimen/text_size_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginEnd="@dimen/side_margin_horizontalView"
+        android:text="@string/multiply" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonMinus"
+        android:onClick="actionEvent"
+        style="@style/CustomButtonMaterial3"
+        android:layout_height="@dimen/button_size_horizontal"
+        android:layout_width="@dimen/button_size_horizontal"
+        android:background="@drawable/round_buttons_right"
+        android:textSize="@dimen/text_size_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginEnd="@dimen/side_margin_horizontalView"
+        android:text="@string/minus" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonPlus"
+        android:onClick="actionEvent"
+        style="@style/CustomButtonMaterial3"
+        android:layout_height="@dimen/button_size_horizontal"
+        android:layout_width="@dimen/button_size_horizontal"
+        android:background="@drawable/round_buttons_right"
+        android:textSize="@dimen/text_size_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginEnd="@dimen/side_margin_horizontalView"
+        android:text="@string/plus" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonEqual"
+        android:onClick="equalEvent"
+        style="@style/CustomButtonMaterial3"
+        android:layout_height="@dimen/button_size_horizontal"
+        android:layout_width="@dimen/button_size_horizontal"
+        android:background="@drawable/round_buttons_right"
+        android:textSize="@dimen/text_size_horizontal"
+        android:textColor="@color/white"
+        android:text="@string/equal"
+        android:layout_marginEnd="@dimen/side_margin_horizontalView"/>
+</LinearLayout>
