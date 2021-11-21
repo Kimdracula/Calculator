@@ -1,9 +1,12 @@
 package com.homework.calculator;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.google.android.material.button.MaterialButton;
 import com.google.android.material.switchmaterial.SwitchMaterial;
 
 public class MainActivity extends ThemeActivity {
@@ -19,30 +22,21 @@ public class MainActivity extends ThemeActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTheme(getAppTheme());
+      //  setTheme(getAppTheme());
         setContentView(R.layout.activity_main);
          textView = findViewById(R.id.textView);
 
-        initThemeChooser();
-
-    }
-
-    private void initThemeChooser() {
-        SwitchMaterial switchTheme = findViewById(R.id.switchTheme);
-switcher(switchTheme);
-    }
-
-    private void switcher(SwitchMaterial switchTheme) {
-        switchTheme.setOnClickListener(view -> {
-            if (switchTheme.isChecked()){
-                setAppTheme(R.style.AppThemeDark);
+        MaterialButton button = findViewById(R.id.buttonGoToSettings);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,SettingsActivity.class);
+                startActivity(intent);
             }
-                else {
-                setAppTheme(R.style.AppThemeLight);
-            }
-            recreate();
         });
     }
+
+
 
     public void numberEvent (View view) {
     if (newOperation)

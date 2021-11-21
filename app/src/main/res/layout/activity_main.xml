@@ -7,15 +7,14 @@
     android:orientation="vertical">
 
 
-    <com.google.android.material.switchmaterial.SwitchMaterial
-        android:id="@+id/switchTheme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/switch_button_margin"
-        android:layout_marginTop="@dimen/switch_button_margin"
-        android:checked="false"
-        android:minHeight="@dimen/min_height_switch_button" />
-
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonGoToSettings"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:text="Button" />
 
     <TextView
         android:id="@+id/textView"
@@ -270,4 +269,10 @@
 
     </include>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
 </LinearLayout>

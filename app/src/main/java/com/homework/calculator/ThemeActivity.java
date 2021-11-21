@@ -7,7 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ThemeActivity extends AppCompatActivity {
-    private static final String Login = "AppTheme2";
+    private static final String Login = "NewTheme";
     private static final String NameSharedPreference = "setup";
 
     @Override
