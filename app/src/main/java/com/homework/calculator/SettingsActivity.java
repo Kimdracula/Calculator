@@ -15,16 +15,18 @@ public class SettingsActivity extends MainActivity implements Login {
     MaterialButton theme1Button;
     MaterialButton theme2Button;
     MaterialButton theme3Button;
-    MaterialButton theme4Button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+        codeStyle = new CodeStyleActivity();
+        initButtons();
+}
 
-       codeStyle = new CodeStyleActivity();
+    private void initButtons() {
 
-       theme1Button = findViewById(R.id.theme1Button);
+        theme1Button = findViewById(R.id.theme1Button);
         theme2Button = findViewById(R.id.theme2Button);
         theme3Button = findViewById(R.id.theme3Button);
 
@@ -46,11 +48,9 @@ public class SettingsActivity extends MainActivity implements Login {
         theme3Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                codeStyle.setThemeCode(R.style.AppTheme);
+                codeStyle.setThemeCode(R.style.AppThemePurple);
             }
         });
-
-
 
         MaterialButton returnButton = findViewById(R.id.returnButton);
         returnButton.setOnClickListener(new View.OnClickListener() {
@@ -61,11 +61,8 @@ public class SettingsActivity extends MainActivity implements Login {
                 startActivity(intent);
             }
         });
-}
-
-
-
-
-
     }
+
+
+}
 
