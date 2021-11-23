@@ -5,108 +5,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/theme1Button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Button" />
 
-    <com.google.android.material.switchmaterial.SwitchMaterial
-        android:id="@+id/switchTheme1"
-        android:layout_width="wrap_content"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/theme2Button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/switch_button_margin"
-        android:layout_marginTop="@dimen/switch_button_margin"
-        android:checked="false"
-        android:minHeight="@dimen/min_height_switch_button">
-    </com.google.android.material.switchmaterial.SwitchMaterial>
+        android:text="Button" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/switch_button_margin"
-            android:text="Theme 1"
-            android:textSize="20dp"
-            android:layout_marginStart="@dimen/switch_button_margin">
-        </TextView>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/theme3Button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Button" />
 
-        <com.google.android.material.switchmaterial.SwitchMaterial
-            android:id="@+id/switchTheme2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/switch_button_margin"
-            android:layout_marginTop="@dimen/switch_button_margin"
-            android:checked="false"
-            android:minHeight="@dimen/min_height_switch_button">
-        </com.google.android.material.switchmaterial.SwitchMaterial>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/switch_button_margin"
-            android:text="Theme 2"
-            android:textSize="20dp"
-            android:layout_marginStart="@dimen/switch_button_margin">
-        </TextView>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/theme4Button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <com.google.android.material.switchmaterial.SwitchMaterial
-            android:id="@+id/switchTheme3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/switch_button_margin"
-            android:layout_marginTop="@dimen/switch_button_margin"
-            android:checked="false"
-            android:minHeight="@dimen/min_height_switch_button">
-        </com.google.android.material.switchmaterial.SwitchMaterial>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/switch_button_margin"
-            android:text="Theme 3"
-            android:textSize="20dp"
-            android:layout_marginStart="@dimen/switch_button_margin">
-        </TextView>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <com.google.android.material.switchmaterial.SwitchMaterial
-            android:id="@+id/switchTheme4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/switch_button_margin"
-            android:layout_marginTop="@dimen/switch_button_margin"
-            android:checked="false"
-            android:minHeight="@dimen/min_height_switch_button">
-        </com.google.android.material.switchmaterial.SwitchMaterial>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/switch_button_margin"
-            android:text="Theme 4"
-            android:textSize="20dp"
-            android:layout_marginStart="@dimen/switch_button_margin">
-        </TextView>
-
-    </LinearLayout>
+        android:text="Button" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/returnButton"
@@ -114,7 +36,7 @@
         android:layout_height="50dp"
         app:cornerRadius="70dp"
         android:backgroundTint="@color/purple_200"
-        android:textSize="33sp"
+        android:textSize="23sp"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"

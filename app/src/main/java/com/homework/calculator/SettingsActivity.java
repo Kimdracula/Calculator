@@ -1,5 +1,6 @@
 package com.homework.calculator;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -8,20 +9,40 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.switchmaterial.SwitchMaterial;
 
-public class SettingsActivity extends AppCompatActivity {
+public class SettingsActivity extends MainActivity implements Login {
 
-    ThemeActivity themeActivity;
+    CodeStyleActivity codeStyle;
+    MaterialButton theme1Button;
+    MaterialButton theme2Button;
+    MaterialButton theme3Button;
+    MaterialButton theme4Button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-     //   initThemeChooser();
-        themeActivity = new ThemeActivity();
+
+       codeStyle = new CodeStyleActivity();
+
+       theme1Button = findViewById(R.id.theme1Button);
+        theme2Button = findViewById(R.id.theme2Button);
+        theme3Button = findViewById(R.id.theme3Button);
+        theme4Button = findViewById(R.id.theme4Button);
+
+
+        theme1Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                codeStyle.setThemeCode(R.style.AppThemeDark);
+            }
+        });
+
         MaterialButton returnButton = findViewById(R.id.returnButton);
         returnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.putExtra(login,codeStyle);
                 finish();
             }
         });
@@ -29,23 +50,7 @@ public class SettingsActivity extends AppCompatActivity {
 
 
 
-    private void initThemeChooser() {
-        SwitchMaterial switchTheme1 = findViewById(R.id.switchTheme1);
-        SwitchMaterial switchTheme2 = findViewById(R.id.switchTheme2);
-        SwitchMaterial switchTheme3 = findViewById(R.id.switchTheme3);
-        SwitchMaterial switchTheme4 = findViewById(R.id.switchTheme4);
-        switcher(switchTheme1);
+
+
     }
 
-    private void switcher(SwitchMaterial switchTheme) {
-        switchTheme.setOnClickListener(view -> {
-            if (switchTheme.isChecked()){
-                themeActivity.setAppTheme(R.style.AppThemeDark);
-            }
-            else {
-                themeActivity.setAppTheme(R.style.AppThemeLight);
-            }
-            recreate();
-        });
-    }
-}
