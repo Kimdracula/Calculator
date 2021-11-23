@@ -22,5 +22,10 @@
     <string name="_default">0</string>
     <string name="material_light">Material light</string>
     <string name="material_dark">Material dark</string>
+    <string name="material_purple">Material purple</string>
+    <string name="apply_dark_theme">apply dark theme</string>
+    <string name="apply_light_theme">apply light theme</string>
+    <string name="apply_purple_theme">apply purple theme</string>
+    <string name="return_button">return</string>
 
 </resources>

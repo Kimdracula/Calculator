@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonGoToSettings"
+        style="@style/CustomButtonMaterial1"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="40dp"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:text="CHANGE THEME" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/textview_side_margin"
+        android:layout_marginRight="@dimen/textview_side_margin"
+        android:gravity="end"
+        android:text="@string/_default"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textSize="60sp">
+    </TextView>
+
+
+    <include
+        android:layout_marginStart="@dimen/include_start_margin"
+        layout="@layout/buttons_right_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/include_margin_top">
+    </include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom|center_horizontal">
+
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_between_buttons_vert">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_between_buttons_vert">
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonNegative"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin_horizontalView"
+                    android:background="@drawable/button_negative_horizontal"
+                    android:text="@string/negative"
+                    android:textColor="@color/black"
+                    android:layout_span="2"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+                    android:textSize="@dimen/text_size_horizontal"
+                    style="@style/CustomButtonMaterial1"
+                    android:layout_height="@dimen/button_size_horizontal"
+                    android:layout_width="@dimen/button_size_horizontal" />
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button5"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin_horizontalView"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_5"
+                    android:textColor="@color/white"
+                    style="@style/CustomButtonMaterial2"
+                    android:textSize="@dimen/text_size_horizontal"
+                    android:layout_height="@dimen/button_size_horizontal"
+                    android:layout_width="@dimen/button_size_horizontal" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button6"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin_horizontalView"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_6"
+                    style="@style/CustomButtonMaterial2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_horizontal"
+                    android:layout_height="@dimen/button_size_horizontal"
+                    android:layout_width="@dimen/button_size_horizontal" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button7"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin_horizontalView"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_7"
+                    style="@style/CustomButtonMaterial2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_horizontal"
+                    android:layout_height="@dimen/button_size_horizontal"
+                    android:layout_width="@dimen/button_size_horizontal" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button8"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin_horizontalView"
+                    style="@style/CustomButtonMaterial2"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_8"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_horizontal"
+                    android:layout_height="@dimen/button_size_horizontal"
+                    android:layout_width="@dimen/button_size_horizontal" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button9"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin_horizontalView"
+                    style="@style/CustomButtonMaterial2"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_9"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_horizontal"
+                    android:layout_height="@dimen/button_size_horizontal"
+                    android:layout_width="@dimen/button_size_horizontal"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_between_buttons_vert">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonPercent"
+                    android:onClick="percentButtonEvent"
+                    style="@style/CustomButtonMaterial1"
+                    android:layout_marginEnd="@dimen/side_margin_horizontalView"
+                    android:background="@drawable/round_buttons_top"
+                    android:text="@string/percent"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_horizontal"
+                    android:layout_height="@dimen/button_size_horizontal"
+                    android:layout_width="@dimen/button_size_horizontal" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button0"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin_horizontalView"
+                    style="@style/CustomButtonMaterial2"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_horizontal"
+                    android:layout_height="@dimen/button_size_horizontal"
+                    android:layout_width="@dimen/button_size_horizontal"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button1"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin_horizontalView"
+                    style="@style/CustomButtonMaterial2"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_horizontal"
+                    android:layout_height="@dimen/button_size_horizontal"
+                    android:layout_width="@dimen/button_size_horizontal" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button2"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin_horizontalView"
+                    style="@style/CustomButtonMaterial2"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_horizontal"
+                    android:layout_height="@dimen/button_size_horizontal"
+                    android:layout_width="@dimen/button_size_horizontal"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button3"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin_horizontalView"
+                    style="@style/CustomButtonMaterial2"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_horizontal"
+                    android:layout_height="@dimen/button_size_horizontal"
+                    android:layout_width="@dimen/button_size_horizontal" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button4"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin_horizontalView"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/_4"
+                    android:textColor="@color/white"
+                    style="@style/CustomButtonMaterial2"
+                    android:textSize="@dimen/text_size_horizontal"
+                    android:layout_height="@dimen/button_size_horizontal"
+                    android:layout_width="@dimen/button_size_horizontal" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonComma"
+                    android:onClick="numberEvent"
+                    android:layout_marginEnd="@dimen/side_margin_horizontalView"
+                    android:background="@drawable/round_buttons_numbers"
+                    android:text="@string/comma"
+                    android:textColor="@color/white"
+                    style="@style/CustomButtonMaterial2"
+                    android:textSize="@dimen/text_size_horizontal"
+                    android:layout_height="@dimen/button_size_horizontal"
+                    android:layout_width="@dimen/button_size_horizontal"/>
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

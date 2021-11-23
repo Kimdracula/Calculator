@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/theme1Button"
+        style="@style/CustomButtonMaterial1"
+        app:cornerRadius="@dimen/corner_radius"
+        android:layout_width="@dimen/button_width_settings"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="@dimen/button_height_settings"
+        android:textSize="@dimen/text_size_settings"
+        android:layout_marginTop="@dimen/margin_top_buttons_settings"
+        android:text="@string/apply_dark_theme" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/theme2Button"
+        style="@style/CustomButtonMaterial1"
+        app:cornerRadius="@dimen/corner_radius"
+        android:layout_width="@dimen/button_width_settings"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="@dimen/button_height_settings"
+        android:textSize="@dimen/text_size_settings"
+        android:layout_marginTop="@dimen/margin_top_buttons_settings"
+        android:text="@string/apply_light_theme" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/theme3Button"
+        style="@style/CustomButtonMaterial1"
+        app:cornerRadius="@dimen/corner_radius"
+        android:layout_width="@dimen/button_width_settings"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="@dimen/button_height_settings"
+        android:textSize="@dimen/text_size_settings"
+        android:layout_marginTop="@dimen/margin_top_buttons_settings"
+        android:text="@string/apply_purple_theme" />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/returnButton"
+        style="@style/CustomButtonMaterial3"
+        android:layout_width="@dimen/return_button_width"
+        android:layout_height="@dimen/button_height_settings"
+        app:cornerRadius="@dimen/corner_radius"
+        android:textSize="@dimen/text_size_settings"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="@string/return_button" />
+
+
+</LinearLayout>
