@@ -6,13 +6,15 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <com.google.android.material.switchmaterial.SwitchMaterial
-        android:id="@+id/switchTheme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="false"
-        android:layout_marginStart="@dimen/switch_button_margin"
-        android:layout_marginTop="@dimen/switch_button_margin"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonGoToSettings"
+        style="@style/CustomButtonMaterial1"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="40dp"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:text="CHANGE THEME" />
 
 
     <TextView

@@ -29,7 +29,6 @@ CodeStyleActivity styleCode;
         styleCode = getIntent().getParcelableExtra(login);
         if (styleCode != null){
             setTheme(styleCode.getThemeCode());
-            recreate();
         }
 
 

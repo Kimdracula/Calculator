@@ -8,39 +8,49 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/theme1Button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        style="@style/CustomButtonMaterial1"
+        app:cornerRadius="@dimen/corner_radius"
+        android:layout_width="@dimen/button_width_settings"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="@dimen/button_height_settings"
+        android:textSize="@dimen/text_size_settings"
+        android:layout_marginTop="@dimen/margin_top_buttons_settings"
+        android:text="@string/apply_dark_theme" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/theme2Button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        style="@style/CustomButtonMaterial1"
+        app:cornerRadius="@dimen/corner_radius"
+        android:layout_width="@dimen/button_width_settings"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="@dimen/button_height_settings"
+        android:textSize="@dimen/text_size_settings"
+        android:layout_marginTop="@dimen/margin_top_buttons_settings"
+        android:text="@string/apply_light_theme" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/theme3Button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        style="@style/CustomButtonMaterial1"
+        app:cornerRadius="@dimen/corner_radius"
+        android:layout_width="@dimen/button_width_settings"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="@dimen/button_height_settings"
+        android:textSize="@dimen/text_size_settings"
+        android:layout_marginTop="@dimen/margin_top_buttons_settings"
+        android:text="@string/apply_purple_theme" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/theme4Button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/returnButton"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        app:cornerRadius="70dp"
-        android:backgroundTint="@color/purple_200"
-        android:textSize="23sp"
-        android:textAlignment="center"
+        style="@style/CustomButtonMaterial3"
+        android:layout_width="@dimen/return_button_width"
+        android:layout_height="@dimen/button_height_settings"
+        app:cornerRadius="@dimen/corner_radius"
+        android:textSize="@dimen/text_size_settings"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
-        android:text="return" />
+        android:text="@string/return_button" />
 
 
 </LinearLayout>

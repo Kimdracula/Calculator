@@ -27,7 +27,6 @@ public class SettingsActivity extends MainActivity implements Login {
        theme1Button = findViewById(R.id.theme1Button);
         theme2Button = findViewById(R.id.theme2Button);
         theme3Button = findViewById(R.id.theme3Button);
-        theme4Button = findViewById(R.id.theme4Button);
 
 
         theme1Button.setOnClickListener(new View.OnClickListener() {
@@ -37,13 +36,29 @@ public class SettingsActivity extends MainActivity implements Login {
             }
         });
 
+        theme2Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                codeStyle.setThemeCode(R.style.AppThemeLight);
+            }
+        });
+
+        theme3Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                codeStyle.setThemeCode(R.style.AppTheme);
+            }
+        });
+
+
+
         MaterialButton returnButton = findViewById(R.id.returnButton);
         returnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent();
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 intent.putExtra(login,codeStyle);
-                finish();
+                startActivity(intent);
             }
         });
 }
